@@ -2,14 +2,9 @@
 
 
 ### settiing up postgres user.
- sudo su - postgres
- psql
-
- CREATE ROLE saleor WITH LOGIN PASSWORD 'saleor';
- CREATE DATABASE saleor;
- ALTER USER saleor WITH SUPERUSER;
-
- exit
+ su -c "CREATE ROLE saleor WITH LOGIN PASSWORD 'saleor';" postgres
+ su -c "CREATE DATABASE saleor;" postgres
+ su -c "ALTER USER saleor WITH SUPERUSER;" postgres
 
 
 IP="34.221.197.60"
