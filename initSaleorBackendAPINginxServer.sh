@@ -30,7 +30,7 @@ sudo apt-get install libpangocairo-1.0-0 -y
  cd ~/code/backend
  virtualenv -p python3.7 venv
  source ~/code/backend/venv/bin/activate
- git clone https://github.com/mirumee/saleor.git --recursive
+ git clone https://github.com/mirumee/saleor.git --recursive --jobs 3
  cd saleor
  git fetch origin 2.10:2.10 && git checkout 2.10
  pip install -r requirements.txt
