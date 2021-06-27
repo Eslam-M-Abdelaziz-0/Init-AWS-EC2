@@ -1,4 +1,4 @@
-sudo add-apt-repository ppa:deadsnakes/ppa
+sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt-get update
 
 sudo apt-get install python3.7 libpython3.7-dev python3-all-dev -y
