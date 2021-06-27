@@ -21,15 +21,15 @@ sudo apt-get install libpangocairo-1.0-0 -y
  ## installing NVM
  curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
- /bin/bash -c 'source ~/.bash_profile' 
- /bin/bash -c 'source ~/.bashrc'
+ source ~/.bash_profile
+ source ~/.bashrc
  nvm install v12
 
 ### Setup Code 
  mkdir -p ~/code/backend
  cd ~/code/backend
  virtualenv -p python3.7 venv
- /bin/bash -c 'source ~/code/backend/venv/bin/activate'
+ source ~/code/backend/venv/bin/activate
  git clone https://github.com/mirumee/saleor.git --recursive --jobs 3
  cd saleor
  git fetch origin 2.10:2.10 && git checkout 2.10
