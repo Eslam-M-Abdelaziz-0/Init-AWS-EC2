@@ -9,6 +9,7 @@ sudo apt-get install python3.7 libpython3.7-dev python3-all-dev -y
 sudo apt install virtualenv -y
 sudo apt install postgresql -y
 sudo apt install uwsgi -y
+sudo apt-get install nginx -y
 sudo apt-get install build-essential python3-dev -y
 
 # Required for 2.11 and above.
