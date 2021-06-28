@@ -13,7 +13,7 @@ source ~/code/backend/venv/bin/activate
 
 cp nginx-config-files/uwsgi_params ~/code/backend/saleor
 
-cp nginx-config-files/saleor.config /etc/nginx/sites-available/
+sudo cp nginx-config-files/saleor.config /etc/nginx/sites-available/
 
 sudo ln -s /etc/nginx/sites-available/saleor.conf /etc/nginx/sites-enabled/
 
