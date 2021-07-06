@@ -70,4 +70,5 @@ export DEFAULT_CURRENCY=INR
  
 ## runserver
 #python manage.py runserver 0.0.0.0:8000
-gunicorn saleor.wsgi:application --bind 0.0.0.0:8000
+#gunicorn saleor.wsgi:application --bind 0.0.0.0:8000
+uwsgi --http :8000 --module saleor.wsgi
