@@ -23,7 +23,7 @@ sudo apt-get install libpangocairo-1.0-0 -y
 
  source ~/.bash_profile
  source ~/.bashrc
- nvm install v12
+ nvm install v10
 
 ### Setup Code 
  mkdir -p ~/code/backend
@@ -41,7 +41,7 @@ sudo apt-get install libpangocairo-1.0-0 -y
  sudo -u postgres psql -c "ALTER USER saleor WITH SUPERUSER;"
 
 
-IP="34.221.197.60"
+IP="35.162.106.140"
 
 cd ~/code/backend/saleor
 source ~/code/backend/venv/bin/activate
