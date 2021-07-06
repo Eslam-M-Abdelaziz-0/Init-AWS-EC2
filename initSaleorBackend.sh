@@ -34,6 +34,7 @@ sudo apt-get install libpangocairo-1.0-0 -y
  cd saleor
  git fetch origin 2.10:2.10 && git checkout 2.10
  pip install -r requirements.txt
+ pip install gunicorn
 
  ### settiing up postgres user.
  sudo -u postgres psql -c "CREATE ROLE saleor WITH LOGIN PASSWORD 'saleor';"
@@ -68,4 +69,5 @@ export DEFAULT_CURRENCY=INR
  python manage.py collectstatic
  
 ## runserver
-python manage.py runserver 0.0.0.0:8000
+#python manage.py runserver 0.0.0.0:8000
+gunicorn saleor.wsgi:application --bind 0.0.0.0:8000
